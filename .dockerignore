@@ -1,0 +1,13 @@
+*.pyc
+*.pyo
+*.pyd
+
+.venv
+.env
+.vscode
+.idea
+
+.git
+.gitignore
+
+*.log
