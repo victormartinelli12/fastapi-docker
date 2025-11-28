@@ -215,20 +215,15 @@ poetry run pytest --cov
 4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
 
-## 📄 Licença
+## Limpar completamente o docker
 
-Este projeto está sob a licença MIT.
+# Parar todos os containers
+- docker compose down
 
-## 👤 Autor
+# Remover TUDO do Docker (containers, imagens, volumes, redes, cache)
+- docker system prune -a --volumes -f
 
-**Victor Santos**
-
-- Docker Hub: [@victorsantos12](https://hub.docker.com/u/victorsantos12)
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
-
-## 🔗 Links Úteis
-
-- [Documentação FastAPI](https://fastapi.tiangolo.com/)
-- [Documentação Docker](https://docs.docker.com/)
-- [Documentação PostgreSQL](https://www.postgresql.org/docs/)
-- [Imagem no Docker Hub](https://hub.docker.com/r/victorsantos12/seeds-fastapi)
+# Verificar que está tudo limpo
+- docker images
+- docker ps -a
+- docker volume ls

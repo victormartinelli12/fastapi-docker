@@ -1,7 +1,7 @@
 services:
   web:
     build: .
-    image: victorsantos12/seeds-fastapi:latest
+    image: victorsantos12/seeds-fastapi:v1.0.1
     ports:
       - "8000:8000"
     environment:
